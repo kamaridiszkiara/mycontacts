@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".NewContactActivity">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="@string/enter_name"
+            android:padding="10dp"
+            android:inputType="text"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="@string/enter_number"
+            android:padding="10dp"
+            android:inputType="phone"
+            android:textSize="15dp"/>
+
+        <RadioGroup
+            android:id="@+id/phoneTypes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="top">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:gravity="top"
+                android:padding="10dp"
+                android:text="@string/choose_type"
+                android:textSize="15dp" />
+
+            <RadioButton
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:gravity="top"
+                android:padding="10dp"
+                android:text="@string/mobile" />
+
+            <RadioButton
+                android:id="@+id/home"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:gravity="top"
+                android:padding="10dp"
+                android:text="@string/home" />
+
+            <RadioButton
+                android:id="@+id/work"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:gravity="top"
+                android:padding="10dp"
+                android:text="@string/work" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/cancelBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_cancel"
+                style="?android:attr/buttonBarStyle"/>
+
+            <ImageButton
+                android:id="@+id/addBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_save"
+                style="?android:attr/buttonBarStyle"/>
+        </LinearLayout>
+</LinearLayout>
+

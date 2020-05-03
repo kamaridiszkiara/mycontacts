@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Contacts</string>
+    <string name="enter_name">Enter the name</string>
+    <string name="enter_number">Enter the phone number</string>
+    <string name="choose_type">Choose the phone type</string>
+    <string name="name">Name:</string>
+    <string name="number">Phone number:</string>
+    <string name="type">Phone type:</string>
+    <string name="mobile">Mobile</string>
+    <string name="home">Home</string>
+    <string name="work">Work</string>
+</resources>
